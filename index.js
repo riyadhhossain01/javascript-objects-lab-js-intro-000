@@ -17,12 +17,13 @@ function deleteFromObjectByKey(object, key){
   var newobj = Object.assign({},object)
   delete newobj[key]
 
-  return newObj;
+  return newobj;
 
 }
 
 function destructivelyDeleteFromObjectByKey(object, key){
-  delete object[key];
+  let clone = Object.assign({},object)
+  delete clone[key];
   return object;
 
 }
