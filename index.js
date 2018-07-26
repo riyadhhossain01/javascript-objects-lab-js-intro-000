@@ -22,8 +22,8 @@ function deleteFromObjectByKey(object, key){
 }
 
 function destructivelyDeleteFromObjectByKey(object, key){
-  let clone = Object.assign({},object)
-  delete clone[key];
+  //let clone = Object.assign({},object)
+  delete object[key];
   return object;
 
 }
